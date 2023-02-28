@@ -41,7 +41,7 @@ metadata:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-    - host: k3s.n0-reply.com
+    - host: dok8s.n0-reply.com
       http:
         paths:
           - path: /
@@ -58,4 +58,4 @@ cat traefik-dashboard-ingress.yaml | envsubst | kubectl apply -n kube-system -f 
 
 ---
 
-http://k3s.n0-reply.com/dashboard/ 
+http://dok8s.n0-reply.com/dashboard/ 
